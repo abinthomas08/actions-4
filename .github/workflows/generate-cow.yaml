@@ -9,11 +9,13 @@ jobs:
         steps:
             - name: checkout repo
               uses: actions/checkout@v4
-              
+
             - name: list  out repo files 
               run: ls -ltra
 
             - name: executing shell script 
-              run: ./ascii.sh
+              run: | 
+               chmod +x ascii.sh
+               ./ascii.sh
               
             
