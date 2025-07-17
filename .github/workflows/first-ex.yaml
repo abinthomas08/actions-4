@@ -16,5 +16,3 @@ jobs:
                 ls 
                 cat README.md
             
-            - name: Generate ascii artwork
-              run: cowsay -f dragon "run for teh cover I am a DRAGONG ...RWAR" >>dragon.txt
