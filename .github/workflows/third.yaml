@@ -20,8 +20,8 @@ jobs:
               run: sleep 30 
     
     second-job: 
+        needs: first
         runs-on: ubunut-latest
-        
         steps: 
            - name: sleep for 10 second 
              run: sleep 10
@@ -30,6 +30,7 @@ jobs:
              run: grep -i "dragon" dragon.txt
 
     third-job: 
+        needs: first
         runs-on: ubuntu-latest 
 
         steps:
